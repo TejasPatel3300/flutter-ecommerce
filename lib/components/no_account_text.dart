@@ -4,8 +4,8 @@ import 'package:ecommerce/screens/forgot_password/forgot_password_screen.dart';
 import '../constants.dart';
 import '../size_config.dart';
 
-class NoAccoutntText extends StatelessWidget {
-  const NoAccoutntText({
+class NoAccountText extends StatelessWidget {
+  const NoAccountText({
     Key? key,
   }) : super(key: key);
 
@@ -19,8 +19,7 @@ class NoAccoutntText extends StatelessWidget {
           style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
         GestureDetector(
-          onTap: () =>
-              Navigator.pushNamed(context, ForgotPasswordScreen.routeName),
+          onTap: () {},
           child: Text(
             "Sign Up",
             style: TextStyle(

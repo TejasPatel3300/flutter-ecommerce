@@ -1,7 +1,6 @@
 import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';
-import '../../../components/no_account_text.dart';
-
+import 'package:ecommerce/components/no_account_text.dart';
 import 'sign_in_form.dart';
 import '../../../components/social_icon.dart';
 
@@ -51,7 +50,7 @@ class Body extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
-                NoAccoutntText(),
+                NoAccountText(),
               ],
             ),
           ),
