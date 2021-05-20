@@ -1,6 +1,7 @@
 import 'package:ecommerce/components/custom_suffix_icon.dart';
 import 'package:ecommerce/components/default_button.dart';
 import 'package:ecommerce/components/form_error.dart';
+import 'package:ecommerce/screens/otp/otp_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -58,6 +59,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               press: () {
                 if (_formKey.currentState!.validate()) {
                   // go to otp screen
+                  Navigator.pushNamed(context, OTPScreen.routeName);
                 }
               },
             ),
@@ -69,6 +71,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
 
   TextFormField buildAddressFormField() {
     return TextFormField(
+      keyboardType: TextInputType.streetAddress,
       onSaved: (newValue) => address = newValue!,
       onChanged: (value) {
         if (value.isNotEmpty) {
@@ -95,7 +98,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
 
   TextFormField buildPhoneNumberFormField() {
     return TextFormField(
-      keyboardType: TextInputType.number,
+      keyboardType: TextInputType.phone,
       onSaved: (newValue) => phoneNumber = newValue!,
       onChanged: (value) {
         if (value.isNotEmpty) {

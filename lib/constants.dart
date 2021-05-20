@@ -30,3 +30,18 @@ const String kMatchPassError = "Passwords don't match";
 const String kNameNullError = "Please Enter Your Name";
 const String kPhoneNumberNullError = "Please Enter Your Phone Number";
 const String kAddressNullError = "Please Enter Your Address";
+
+final otpInputDecoration = InputDecoration(
+  contentPadding:
+      EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+  border: outlineInputBorder(),
+);
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(color: kPrimaryColor),
+  );
+}
