@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
+import 'special_offers.dart';
 import 'section_title.dart';
 
 class Body extends StatelessWidget {
@@ -20,18 +21,12 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenWidth(30)),
             Categories(),
             SizedBox(height: getProportionateScreenWidth(30)),
+            SpecialOffers(),
+            SizedBox(height: getProportionateScreenWidth(30)),
             SectionTitle(
-              text: "Special for you",
+              text: "Popular Product",
               press: () {},
-            ),
-            SizedBox(
-              width: getProportionateScreenWidth(240),
-              height: getProportionateScreenWidth(100),
-              child: Image.asset(
-                "assets/images/Image Banner 2.png",
-                fit: BoxFit.cover,
-              ),
-            ),
+            )
           ],
         ),
       ),
