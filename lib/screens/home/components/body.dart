@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
+import 'popular_products.dart';
 import 'special_offers.dart';
-import 'section_title.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -23,10 +23,8 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenWidth(30)),
             SpecialOffers(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            SectionTitle(
-              text: "Popular Product",
-              press: () {},
-            )
+            PopularProducts(),
+            SizedBox(height: getProportionateScreenWidth(30)),
           ],
         ),
       ),
