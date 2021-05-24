@@ -24,6 +24,8 @@ class ProductCard extends StatelessWidget {
       child: SizedBox(
         width: getProportionateScreenWidth(width),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             AspectRatio(
               aspectRatio: aspectRatio,
@@ -39,6 +41,7 @@ class ProductCard extends StatelessWidget {
             const SizedBox(height: 5),
             Text(
               product.title,
+              textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.black,
               ),
