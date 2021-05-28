@@ -43,7 +43,7 @@ List<Product> demoProducts = [
     ],
     title: "Wireless Controller for PS4™",
     price: 64.99,
-    description: "",
+    description: description,
     ratings: 4.8,
     isFavourite: true,
     isPopular: true,
@@ -61,7 +61,7 @@ List<Product> demoProducts = [
     ],
     title: "Nike Sport White - Man Pant",
     price: 50.5,
-    description: "",
+    description: description,
     ratings: 4.1,
     isPopular: true,
   ),
@@ -78,26 +78,29 @@ List<Product> demoProducts = [
     ],
     title: "Gloves XC Omega - Polygon",
     price: 36.55,
-    description: "",
+    description: description,
     ratings: 4.1,
     isFavourite: true,
     isPopular: true,
   ),
-  Product(
-    id: 4,
-    images: [
-      "assets/images/wireless headset.png",
-    ],
-    colors: [
-      Color(0xFFF6625E),
-      Color(0xFF836DB8),
-      Color(0xFFDECB9C),
-      Colors.white,
-    ],
-    title: "Logitech Head",
-    price: 20.20,
-    description: "",
-    ratings: 4.1,
-    isFavourite: true,
-  ),
+  // Product(
+  //   id: 4,
+  //   images: [
+  //     "assets/images/wireless headset.png",
+  //   ],
+  //   colors: [
+  //     Color(0xFFF6625E),
+  //     Color(0xFF836DB8),
+  //     Color(0xFFDECB9C),
+  //     Colors.white,
+  //   ],
+  //   title: "Logitech Head",
+  //   price: 20.20,
+  //   description: "",
+  //   ratings: 4.1,
+  //   isFavourite: true,
+  // ),
 ];
+
+const String description =
+    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";

@@ -1,5 +1,6 @@
 import 'package:ecommerce/components/product_card.dart';
 import 'package:ecommerce/models/Product.dart';
+import 'package:ecommerce/screens/details/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
@@ -28,6 +29,12 @@ class PopularProducts extends StatelessWidget {
                 demoProducts.length,
                 (index) => ProductCard(
                   product: demoProducts[index],
+                  press: () => Navigator.pushNamed(
+                    context,
+                    DetailScreen.routeName,
+                    arguments:
+                        ProductDetailsArguments(product: demoProducts[index]),
+                  ),
                 ),
               ),
               SizedBox(width: getProportionateScreenWidth(20)),
