@@ -1,5 +1,4 @@
 import 'package:ecommerce/constants.dart';
-import 'package:ecommerce/routes.dart';
 import 'package:ecommerce/screens/sign_in/sign_in_screen.dart';
 import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';

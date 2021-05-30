@@ -9,8 +9,11 @@ class Body extends StatelessWidget {
     return Column(
       children: <Widget>[
         SizedBox(height: SizeConfig.screenHeight * 0.04),
-        Image.asset("assets/images/success.png",
-            height: SizeConfig.screenHeight * 0.4),
+        Image.asset(
+          "assets/images/success.png",
+          height: SizeConfig.screenHeight * 0.4,
+          fit: BoxFit.cover,
+        ),
         SizedBox(height: SizeConfig.screenHeight * 0.08),
         Text(
           "Login Success",
